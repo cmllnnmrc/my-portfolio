@@ -1,13 +1,407 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+  @apply max-w-[150rem] mx-auto p-[1.5rem]
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-clip-text{
+  -webkit-stroke-color: #ff6f00;
+  -webkit-text-stroke-width: 1px;
+}
+
+.bg-text{
+  -webkit-stroke-color: #000000;
+  -webkit-text-stroke-width: 1px;
+}
+
+@layer base {
+  html {
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@layer utilities {
+  .btn{
+    @apply inline-block py-[.5rem] px-[1rem] border-transparent
+  }
+
+  .orange{
+    @apply cursor-pointer text-[1rem] text-light bg-primary rounded-full hover:text-dark hover:bg-transparent border-[1px] border-transparent font-medium hover:border-primary
+  }
+
+  .shallow-orange{
+    @apply text-primary cursor-pointer text-[1rem] bg-transparent border-[1px] border-primary 
+  }
+
+  .white{
+    @apply cursor-pointer text-[1rem] text-dark bg-light rounded-full hover:bg-dark hover:text-light
+  }
+}
+
+@layer components {
+
+  /** --------------- HEADER --------------- **/
+
+  .header{
+    @apply bg-light w-full fixed z-[99]
+  }
+
+  .header__wrapper{
+    @apply flex justify-between items-center
+  }
+
+  .branding{
+    @apply w-[10rem] z-10
+  }
+  
+  .header__nav{
+    @apply hidden md:flex
+  }
+
+  .header__nav ul{
+    @apply flex gap-6 py-[.5rem]
+  }
+
+  .header__nav ul li{
+    @apply cursor-pointer capitalize font-medium text-dark hover:scale-105 hover:text-primary 
+  }
+
+  .toggle__menu{
+    @apply z-10 cursor-pointer text-primary md:hidden
+  }
+
+  .mobile__nav{
+    @apply md:hidden absolute flex flex-col justify-center items-center top-0 left-0 w-full h-screen bg-light
+  }
+
+  .mobile__nav ul{
+    @apply flex flex-col justify-center items-center capitalize font-medium cursor-pointer
+  }
+
+  .mobile__nav ul li{
+    @apply w-[10rem] p-[.5rem]  font-medium text-center rounded-full hover:bg-primary hover:text-light
+  }
+
+
+
+  /** --------------- BANNER --------------- **/
+
+  .banner{
+    @apply bg-light flex items-center max-h-[100vh] w-full pt-[5rem]
+  }
+
+  .banner__wrapper{
+    @apply flex flex-col justify-center items-center max-w-screen-lg mx-auto md:flex-row md:gap-10 lg:justify-between
+  }
+
+  .banner__img{
+    @apply md:w-[50%]
+  }
+
+  .banner__img img{
+    @apply mx-auto w-[10rem] md:w-[50rem]
+  }
+
+  .banner__content{
+    @apply text-center md:text-left md:w-[50%] 
+  }
+
+  .banner__text h5{
+    @apply font-semibold text-primary md:text-[1.2rem]
+  }
+
+  .banner__text h1{
+    @apply text-[2.5rem] leading-[2.5rem] font-bold lg:mt-[.5rem] lg:text-[3.5rem] lg:leading-[3.5rem]
+  }
+
+  .banner__text p{
+    @apply my-[1rem] md:my-[1.5rem]
+  }
+
+  .banner__content button{
+    @apply w-full md:w-fit
+  }
+
+  .banner__socials{
+    @apply flex justify-center items-center gap-2 lg:gap-5
+  }
+
+  .banner__socials ul{
+    @apply flex justify-center gap-4 text-primary my-[1rem] md:justify-start md:my-[2rem]
+  }
+
+  .banner__socials ul li:hover{
+    @apply text-dark scale-110 transition ease-in-out duration-300
+  }
+
+  .banner__socials span{
+    @apply hidden md:w-[20rem] md:h-[.2rem] md:block md:bg-dark  
+  }
+
+  .banner__action{
+    @apply flex justify-center
+  }
+
+  .banner__action span{
+    @apply text-primary hover:text-dark cursor-pointer w-fit
+  }
+
+
+  /** --------------- ABOUT --------------- **/
+
+  .about{
+    @apply relative bg-light py-[1rem]
+  }
+
+  .about__design{
+    @apply absolute left-0 translate-y-[-5rem] 
+  }
+
+  .about__design img{
+    @apply lg:w-[8rem]
+  }
+
+  .about__title{
+    @apply relative text-center my-[1rem]
+  }
+
+  .about__title p{
+    @apply text-primary font-semibold
+  }
+
+  .about__title h2{
+    @apply text-[2rem] font-bold
+  }
+
+  .about__wrapper{
+    @apply md:grid md:grid-cols-2 md:items-center
+  }
+
+  .about__img img{
+    @apply mx-auto w-[20rem]
+  }
+
+  .about__text{
+    @apply text-justify text-dark my-[1.5rem]
+  }
+
+  .about__text p{
+    @apply my-[1rem]
+  }
+
+  .about__action{
+    @apply flex justify-center md:justify-start
+  }
+
+  .about__action a{
+    @apply w-full text-center md:w-fit
+  }
+
+
+  /** --------------- EXPERIENCE --------------- **/
+
+  .experience{
+    @apply bg-light py-[1.5rem]
+  }
+
+  .experience__title{
+    @apply relative text-center my-[1rem]
+  }
+
+  .experience__title p{
+    @apply text-primary font-semibold
+  }
+
+  .experience__title h2{
+    @apply text-[2rem] font-bold
+  }
+
+  .experience__wrapper{
+    @apply mt-[1.5rem] md:flex md:items-center md:justify-evenly
+  }
+
+  .experience__content{
+    @apply flex md:flex-col 
+  }
+
+  .experience__content:nth-child(2){
+    @apply my-[1rem]
+  }
+
+  .experience__content:first-child .experience__text h3{
+    @apply md:w-[15rem]
+  }
+
+  .experience__shape{
+    @apply text-primary flex flex-col items-center justify-start md:flex-row 
+  }
+
+  .experience__shape span:first-child{
+    @apply z-30 
+  }
+
+  .experience__shape span:last-child{
+    @apply w-[5rem] h-[.2rem] block bg-dark transform rotate-90 z-10 md:rotate-180 md:w-[15rem] 
+  }
+
+  .experience__text{
+    @apply lg:ml-[1.5rem]
+  }
+
+  .experience__text h3{
+    @apply font-semibold md:w-[16rem]
+  }
+
+  .experience__text p{
+    @apply italic
+  }
+
+
+  /** --------------- PORTFOLIO --------------- **/
+
+  .portfolio{
+    @apply bg-light py-[1.5rem]
+  }
+
+  .portfolio__design{
+    @apply absolute right-0 translate-y-[-5rem]
+  }
+
+  .portfolio__design img{
+    @apply w-[5rem] lg:w-[7rem]
+  }
+
+  .portfolio__title{
+    @apply relative text-center my-[2rem]
+  }
+
+  .portfolio__title p{
+    @apply text-primary font-semibold
+  }
+
+  .portfolio__title h2{
+    @apply text-[2rem] font-bold
+  }
+
+  .portfolio__wrapper{
+    @apply grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0
+  }
+
+  .portfolio__card{
+    @apply shadow-md shadow-grey rounded-lg overflow-hidden 
+  }
+
+  .portfolio__img{
+    @apply shadow-sm overflow-hidden
+  }
+
+  .portfolio__card:hover img{
+    @apply scale-110 transition ease-in-out duration-300
+  }
+
+  .portfolio__card img{
+    @apply rounded-md transition ease-in-out duration-300 md:min-h-[15rem]
+  }
+
+  .portfolio__content p{
+    @apply p-[1rem] min-h-[9rem] flex items-center
+  }
+
+  .portfolio__actions{
+    @apply bg-primary rounded-b-md
+  }
+
+  .portfolio__actions ul{
+    @apply flex items-center justify-between p-[1rem] text-light
+  }
+
+  .portfolio__actions ul li a{
+    @apply flex items-center gap-1 font-semibold
+  }
+
+
+   /** --------------- SKILLS --------------- **/
+
+   .skills{
+    @apply bg-light py-[1.5rem]
+  }
+
+  .skills__title{
+    @apply relative text-center my-[2rem]
+  }
+
+  .skills__title p{
+    @apply text-primary font-semibold
+  }
+
+  .skills__title h2{
+    @apply text-[2rem] font-bold
+  }
+
+  .skills__wrapper{
+    @apply flex flex-wrap justify-center gap-8 w-full md:w-[60rem] md:mx-auto mt-[3rem]
+  }
+
+  .skills__card{
+    @apply flex flex-col justify-center items-center
+  }
+
+  .skills__card img{
+    @apply w-[5rem] h-[5rem] md:w-[8rem] md:h-[8rem]
+  }
+
+  .skills__card p{
+    @apply mt-[1rem] font-semibold text-primary
+  }
+
+
+   /** --------------- CONTACT --------------- **/
+
+   .contact{
+    @apply bg-light max-h-[13rem]
+   }
+
+   .contact__wrapper{
+    @apply bg-primary flex flex-col justify-center items-center text-light text-center p-[3rem] rounded-lg translate-y-[2rem] shadow-md shadow-black
+   }
+
+   .contact__wrapper h2{
+    @apply text-[1.5rem] font-bold md:text-[2.5rem]
+   }
+
+   .contact__wrapper p{
+    @apply my-[1.5rem]
+   }
+
+
+
+   /** --------------- FOOTER --------------- **/
+
+   .footer{
+    @apply min-h-[10rem] bg-dark
+   }
+
+   .footer__wrapper{
+    @apply pt-[10rem] flex flex-col gap-4 justify-center items-center text-center text-light md:flex-row md:justify-between md:text-left
+   }
+
+   .footer__socials ul{
+    @apply flex gap-4 text-[.8rem]
+   }
+
+   .footer__socials ul li{
+    @apply hover:scale-110 transition ease-in-out duration-300 hover:text-primary
+   }
+
+   .footer__copyright{
+    @apply text-[.8rem]
+   }
+
 }
