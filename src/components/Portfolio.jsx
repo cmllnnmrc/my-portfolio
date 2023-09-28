@@ -29,8 +29,8 @@ const Portfolio = () => {
                     <p>One of the engaging challenges i've experienced is the task of recreating a website by harnessing the capabilities of Tailwind CSS.</p>
                     <div className="portfolio__actions">
                         <ul>
-                            <li><a href="https://wondertour.vercel.app/"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://github.com/cmllnnmrc/Tailwind-WonderTour"><FaGithub size={20}/>Code</a></li>
+                            <li><a href="https://wondertour.vercel.app/" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://github.com/cmllnnmrc/Tailwind-WonderTour" target="_blank"><FaGithub size={20}/>Code</a></li>
                         </ul>
                     </div>
                     </div>
@@ -43,8 +43,8 @@ const Portfolio = () => {
                     <p>By leveraging the capabilities of Tailwind CSS, I've skillfully replicated the Edupit website.</p>
                     <div className="portfolio__actions">
                         <ul>
-                            <li><a href="https://edupit.vercel.app/"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://github.com/cmllnnmrc/Tailwind-Edupit"><FaGithub size={20}/>Code</a></li>
+                            <li><a href="https://edupit.vercel.app/" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://github.com/cmllnnmrc/Tailwind-Edupit" target="_blank"><FaGithub size={20}/>Code</a></li>
                         </ul>
                     </div>
                     </div>
@@ -57,8 +57,8 @@ const Portfolio = () => {
                     <p>A task of Crafting the VS Code website by utilizing SASS as my primary tool for the design and development.</p>
                     <div className="portfolio__actions">
                         <ul>
-                            <li><a href="https://vscode-tw.vercel.app/"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://github.com/cmllnnmrc/SASS-VS-Code"><FaGithub size={20}/>Code</a></li>
+                            <li><a href="https://vscode-tw.vercel.app/" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://github.com/cmllnnmrc/SASS-VS-Code" target="_blank"><FaGithub size={20}/>Code</a></li>
                         </ul>
                     </div>
                     </div>
@@ -71,8 +71,8 @@ const Portfolio = () => {
                     <p>Building this website was a challenging endeavor, because of its intricate design elements an structure. Utilizing SASS to build this website.</p>
                     <div className="portfolio__actions">
                         <ul>
-                            <li><a href="https://starbucks-tw.vercel.app/"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://github.com/cmllnnmrc/SASS-Starbucks"><FaGithub size={20}/>Code</a></li>
+                            <li><a href="https://starbucks-tw.vercel.app/" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://github.com/cmllnnmrc/SASS-Starbucks" target="_blank"><FaGithub size={20}/>Code</a></li>
                         </ul>
                     </div>
                     </div>
@@ -85,8 +85,8 @@ const Portfolio = () => {
                     <p>A task of redesigning the company's website with the help og figma</p>
                     <div className="portfolio__actions">
                         <ul>
-                            <li><a href="https://www.figma.com/proto/WULO0mqevqHRC3onzl7VpO/Website-Redesign?type=design&t=FmJLNcR6j3HtH8Ct-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://www.figma.com/file/WULO0mqevqHRC3onzl7VpO/Website-Redesign?type=design&mode=design&t=FmJLNcR6j3HtH8Ct-0"><FaGithub size={20}/>Figma</a></li>
+                            <li><a href="https://www.figma.com/proto/WULO0mqevqHRC3onzl7VpO/Website-Redesign?type=design&t=FmJLNcR6j3HtH8Ct-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://www.figma.com/file/WULO0mqevqHRC3onzl7VpO/Website-Redesign?type=design&mode=design&t=FmJLNcR6j3HtH8Ct-0" target="_blank"><FaGithub size={20}/>Figma</a></li>
                         </ul>
                     </div>
                     </div>
@@ -99,8 +99,8 @@ const Portfolio = () => {
                     <p>A task where the mentor provided only with a logo and tasked with building a website from scratch.</p>
                     <div className="portfolio__actions">
                         <ul>
-                            <li><a href="https://www.figma.com/proto/XiBQaQgsQUAX9x6zpnKJUD/Camille's-Activity?type=design&node-id=30-46&t=Kljc3A5WieM0kZWI-0&scaling=min-zoom&page-id=30%3A45&starting-point-node-id=30%3A46"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://www.figma.com/file/XiBQaQgsQUAX9x6zpnKJUD/Camille's-Activity?type=design&node-id=30-45&mode=design&t=Kljc3A5WieM0kZWI-0"><FaGithub size={20}/>Figma</a></li>
+                            <li><a href="https://www.figma.com/proto/XiBQaQgsQUAX9x6zpnKJUD/Camille's-Activity?type=design&node-id=30-46&t=Kljc3A5WieM0kZWI-0&scaling=min-zoom&page-id=30%3A45&starting-point-node-id=30%3A46" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://www.figma.com/file/XiBQaQgsQUAX9x6zpnKJUD/Camille's-Activity?type=design&node-id=30-45&mode=design&t=Kljc3A5WieM0kZWI-0" target="_blank"><FaGithub size={20}/>Figma</a></li>
                         </ul>
                     </div>
                     </div>

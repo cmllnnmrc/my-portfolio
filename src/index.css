@@ -323,7 +323,7 @@
   }
 
   .portfolio__actions ul li a{
-    @apply flex items-center gap-1 font-semibold
+    @apply flex items-center gap-1 font-semibold hover:scale-105 hover:text-dark
   }
 
 
