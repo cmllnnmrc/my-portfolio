@@ -2,6 +2,7 @@ import React from 'react'
 import HeroImage from '../assets/heroImage.svg'
 import { BiChevronDown, BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedinSquare } from 'react-icons/bi'
 import { HiOutlineMail } from 'react-icons/hi'
+import { Link } from 'react-scroll';
 
 const Home = () => {
     const links = [
@@ -37,23 +38,23 @@ const Home = () => {
 
 
   return (
-    <section className="banner">
+    <section className="home">
         <div className="container">
-            <div className="banner__wrapper">
-                <div className="banner__img">
-                    <img src={HeroImage} alt="Banner Img" />
+            <div className="home__wrapper">
+                <div className="home__img">
+                    <img className='animate__animated animate__delay-.8s animate__fadeInLeft' src={HeroImage} alt="home Img" />
                 </div>
-                <div className="banner__content">
-                    <div className="banner__text">
-                        <h5>Hey, I'm Camille</h5>
-                        <h1>I am a Frontend Developer</h1>
-                        <p>A frontend developer that skillfully employs SASS and Tailwind CSS to craft stunning and responsive websites, while also exploring React.js and Python for web development.
+                <div className="home__content">
+                    <div className="home__text">
+                        <h5 className='animate__animated animate__delay-.8s animate__fadeInRight'>Hey, I'm Camille</h5>
+                        <h1 className='animate__animated animate__delay-1s animate__fadeInRight'>I am a Frontend Developer</h1>
+                        <p className='animate__animated animate__delay-2s animate__fadeInRight'>A frontend developer that skillfully employs SASS and Tailwind CSS to craft stunning and responsive websites, while also exploring React.js and Python for web development.
                         </p>
                     </div>
-                    <button className="btn orange">
+                    <button className="btn orange animate__animated animate__delay-3s animate__fadeIn">
                         Portfolio
                     </button>
-                    <div className="banner__socials">
+                    <div className="home__socials animate__animated animate__delay-3s animate__fadeInRight">
                         <ul>
                             {links.map(({id, child, href}) => (
                                 <li key={id}><a href={href} target='_blank' rel='noreferrer'>{child}</a></li>
@@ -63,8 +64,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="banner__action">
-                <span><BiChevronDown size={60} /></span>
+            <div className="home__action">
+                <span><Link to={'About.jsx'} smooth duration={500}><BiChevronDown size={60} /></Link></span>
             </div>
         </div>
     </section>
