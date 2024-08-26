@@ -235,6 +235,10 @@
     @apply my-[1rem]
   }
 
+  .experience__content:nth-child(3){
+    @apply mb-[1rem]
+  }
+
   .experience__content:first-child .experience__text h3{
     @apply md:w-[20rem]
   }
