@@ -31,7 +31,7 @@ const Footer = () => {
             child: (
                 <HiOutlineMail size={30} />
             ),
-            href: 'mailto:cmarca01@gmail.com'
+            href: 'https://mail.google.com/mail/?view=cm&fs=1&to=cmarca01@gmail.com'
         },
     ]
 
