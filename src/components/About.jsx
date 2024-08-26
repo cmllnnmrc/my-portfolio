@@ -23,7 +23,7 @@ const About = () => {
                         <p className='animate__animated animate__delay-3s animate__fadeInRight'>Despite my limited experience, I firmly believe in my existing skills and have a passionate drive to continually enhance them. I'm dedicated to ongoing learning and aspire to make a significant impact in the field of web development and the broader IT industry.</p>
                     </div>
                     <div className="about__action">
-                        <a href='/MARCA_Resume.pdf' download='MARCA_Resume' className="btn orange">Download CV</a>
+                        <a href='/CAMILLE_RESUME.pdf' download='CAMILLE_RESUME' className="btn orange">Download CV</a>
                     </div>
                 </div>
             </div>
