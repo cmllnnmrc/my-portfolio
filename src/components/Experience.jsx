@@ -10,6 +10,26 @@ const Experience = () => {
                 <h2>EXPERIENCE</h2>
             </div>
             <div className="experience__wrapper">
+              <div className="experience__content">
+                    <div className="experience__shape">
+                        <span><BsFillCircleFill size={30} /></span>
+                        <span></span>
+                    </div>
+                    <div className="experience__text">
+                        <h3>Commissioned</h3>
+                        <p>Graphic Designer</p>
+                    </div>
+                </div>
+              <div className="experience__content">
+                    <div className="experience__shape">
+                        <span><BsFillCircleFill size={30} /></span>
+                        <span></span>
+                    </div>
+                    <div className="experience__text">
+                        <h3>UNLAD Foundation</h3>
+                        <p>Business Analyst</p>
+                    </div>
+                </div>
                 <div className="experience__content">
                     <div className="experience__shape">
                         <span><BsFillCircleFill size={30} /></span>
