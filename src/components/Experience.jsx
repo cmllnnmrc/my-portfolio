@@ -16,7 +16,7 @@ const Experience = () => {
                         <span></span>
                     </div>
                     <div className="experience__text">
-                        <h3>Commissioned</h3>
+                        <h3>Commissioned (WFH : Part-time)</h3>
                         <p>Graphic Designer</p>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Experience = () => {
                         <span></span>
                     </div>
                     <div className="experience__text">
-                        <h3>UNLAD Foundation</h3>
+                        <h3>UNLAD Foundation (WFH : Part-time)</h3>
                         <p>Business Analyst</p>
                     </div>
                 </div>
