@@ -50,16 +50,6 @@ const Experience = () => {
                         <p>Market Employee</p>
                     </div>
                 </div>
-                <div className="experience__content">
-                    <div className="experience__shape">
-                        <span><BsFillCircleFill size={30} /></span>
-                        <span></span>
-                    </div>
-                    <div className="experience__text">
-                        <h3>Special Program for Employment of Student</h3>
-                        <p>Market Employee</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
