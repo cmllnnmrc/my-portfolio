@@ -19,7 +19,7 @@ const About = () => {
                 </div>
                 <div className="about__content">
                     <div className="about__text">
-                        <p className='animate__animated animate__delay-2s animate__fadeInRight'>I graduated with a degree in BSIT from the Polytechnic University of the Philippines. My passion for web development, especially frontend work, was sparked during my internship. With a solid foundation in HTML and CSS, I'm excited to explore new tools and programming languages to further enhance my skills in web application development.</p>
+                        <p className='animate__animated animate__delay-2s animate__fadeInRight'>I am a BSIT graduate with cum laude honors from the Polytechnic University of the Philippines Lopez Branch. My passion for web development, especially in frontend work, began during my internship. With a strong foundation in HTML and CSS, I'm excited to broaden my skills by exploring new tools and programming languages for web application development.</p>
                         <p className='animate__animated animate__delay-3s animate__fadeInRight'>Despite my limited experience, I firmly believe in my existing skills and have a passionate drive to continually enhance them. I'm dedicated to ongoing learning and aspire to make a significant impact in the field of web development and the broader IT industry.</p>
                     </div>
                     <div className="about__action">
