@@ -25,7 +25,7 @@ const Home = () => {
             child: (
                 <BiLogoLinkedinSquare size={30} />
             ),
-            href: 'https://www.linkedin.com/in/camille-ann-marca-45818b269'
+            href: 'https://www.linkedin.com/in/cmllnnmrc/'
         },
         {
             id: 4,
