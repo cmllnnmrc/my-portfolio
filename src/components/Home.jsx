@@ -48,7 +48,7 @@ const Home = () => {
                     <div className="home__text">
                         <h5 className='animate__animated animate__delay-.8s animate__fadeInRight'>Hey, I'm Camille</h5>
                         <h1 className='animate__animated animate__delay-1s animate__fadeInRight'>I am a Frontend Developer</h1>
-                        <p className='animate__animated animate__delay-2s animate__fadeInRight'>A frontend developer that skillfully employs SASS and Tailwind CSS to craft stunning and responsive websites, while also exploring React.js and Python for web development.
+                        <p className='animate__animated animate__delay-2s animate__fadeInRight'>Frontend developer who’s great with SASS and Tailwind CSS, building beautiful, responsive websites. Also experienced in documenting system workflows and handling quality assurance.
                         </p>
                     </div>
                     <button className="btn orange animate__animated animate__delay-3s animate__fadeIn">
