@@ -236,7 +236,7 @@
   }
 
   .experience__content:first-child .experience__text h3{
-    @apply text-[1.5rem] md:w-[15rem]
+    @apply md:w-[20rem]
   }
 
   .experience__shape{
@@ -256,7 +256,7 @@
   }
 
   .experience__text h3{
-    @apply font-semibold md:w-[16rem]
+    @apply font-semibold md:w-[20rem]
   }
 
   .experience__text p{
