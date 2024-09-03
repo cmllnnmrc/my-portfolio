@@ -52,7 +52,7 @@ const Home = () => {
                         </p>
                     </div>
                     <button className="btn orange animate__animated animate__delay-3s animate__fadeIn">
-                        Portfolio
+                        <Link to={'portfolio'} smooth duration={500}>Portfolio</Link>
                     </button>
                     <div className="home__socials animate__animated animate__delay-3s animate__fadeInRight">
                         <ul>
@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="home__action">
-                <span><Link to={'About.jsx'} smooth duration={500}><BiChevronDown size={60} /></Link></span>
+                <span><Link to={'about'} smooth duration={500}><BiChevronDown size={60} /></Link></span>
             </div>
         </div>
     </section>
