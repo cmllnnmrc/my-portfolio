@@ -3,15 +3,17 @@ import design from '../assets/design 3.png'
 import wonderTour from '../assets/WonderTour.png'
 import edupit from '../assets/Edupit.png'
 import vsCode from '../assets/SASS-VS-Code.png'
-import starbucks from '../assets/SASS-Starbucks.png'
+import kierah from '../assets/whitelogo.png'
 import redesign from '../assets/Redesign.png'
 import webDesign from '../assets/webDesign.png'
+import mistaWebsite from '../assets/mistawebsite.png'
+import ppt from '../assets/ppt.png'
 import { FaGithub } from 'react-icons/fa'
 import { BiPlayCircle } from 'react-icons/bi'
 
 const Portfolio = () => {
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
         <div className="portfolio__design">
             <img src={design} alt="" />
         </div>
@@ -21,6 +23,46 @@ const Portfolio = () => {
                 <h2>PORTFOLIO</h2>
             </div>
             <div className="portfolio__wrapper">
+                <div className="portfolio__card">
+                    <div className="portfolio__img">
+                      <img src={kierah} alt="Graphic Design" />  
+                    </div>
+                    <div className="portfolio__content">
+                    <p>I'm a graphic designer for my uncle's business. View all my works here.</p>
+                    <div className="portfolio__actions">
+                        <ul>
+                            <li><a href="https://www.canva.com/design/DAGN4buM78Q/3I5qZY4g2ZJKS_yTvaqb5g/view?utm_content=DAGN4buM78Q&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><BiPlayCircle size={20}/>View</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div className="portfolio__card">
+                    <div className="portfolio__img">
+                      <img src={ppt} alt="Templates" />  
+                    </div>
+                    <div className="portfolio__content">
+                    <p>I'm working at UNLAD Foundation, where one of my tasks is creating several PowerPoint templates.</p>
+                    <div className="portfolio__actions">
+                        <ul>
+                            <li><a href="https://www.canva.com/folder/FAFPZJHHmSk" target="_blank"><BiPlayCircle size={20}/>View</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div className="portfolio__card">
+                    <div className="portfolio__img">
+                      <img src={mistaWebsite} alt="Mista UI/UX Design" />  
+                    </div>
+                    <div className="portfolio__content">
+                    <p>I'm working at UNLAD Foundation, and one of my tasks is designing the UI/UX for MISTA Website.</p>
+                    <div className="portfolio__actions">
+                        <ul>
+                            <li><a href="https://www.figma.com/proto/iqEOrsgKN7RARo1ngFmBUY/MISTA-Wireframe?node-id=54-51&node-type=SECTION&t=SBeGNsVfucq4ZEFJ-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=54%3A51" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
+                            <li><a href="https://www.figma.com/design/iqEOrsgKN7RARo1ngFmBUY/MISTA-Wireframe?node-id=105-304&node-type=SECTION&t=SBeGNsVfucq4ZEFJ-0" target="_blank"><FaGithub size={20}/>Figma</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
                 <div className="portfolio__card">
                     <div className="portfolio__img">
                       <img src={wonderTour} alt="Wonder Tour" />  
@@ -65,24 +107,10 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio__card">
                     <div className="portfolio__img">
-                      <img src={starbucks} alt="Starbucks" />  
-                    </div>
-                    <div className="portfolio__content">
-                    <p>Building this website was a challenging endeavor, because of its intricate design elements an structure. Utilizing SASS to build this website.</p>
-                    <div className="portfolio__actions">
-                        <ul>
-                            <li><a href="https://starbucks-tw.vercel.app/" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
-                            <li><a href="https://github.com/cmllnnmrc/SASS-Starbucks" target="_blank"><FaGithub size={20}/>Code</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-                <div className="portfolio__card">
-                    <div className="portfolio__img">
                       <img src={redesign} alt="Redesign" />  
                     </div>
                     <div className="portfolio__content">
-                    <p>A task of redesigning the company's website with the help og figma</p>
+                    <p>A task of redesigning the company's website with the help of figma</p>
                     <div className="portfolio__actions">
                         <ul>
                             <li><a href="https://www.figma.com/proto/WULO0mqevqHRC3onzl7VpO/Website-Redesign?type=design&t=FmJLNcR6j3HtH8Ct-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank"><BiPlayCircle size={20}/>Demo</a></li>
