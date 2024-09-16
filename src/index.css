@@ -109,7 +109,7 @@
   }
 
   .home__content{
-    @apply text-center md:text-left md:w-[50%] 
+    @apply text-center md:text-left md:w-[80%] 
   }
 
   .home__text h5{
